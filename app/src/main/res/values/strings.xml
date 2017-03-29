@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Tester_App</string>
+    <string name="tester_app">Tester App</string>
+    <string name="system_test">System Test</string>
+    <string name="wybierz">Wybierz</string>
+    <string name="red">red</string>
+    <string name="blue">blue</string>
+    <string name="green">green</string>
+    <string name="dimming">dimming</string>
+    <string name="megacam">Megacam</string>
+    <string name="sensor">Sensor</string>
+    <string name="touch">touch</string>
+    <string name="receiver">receiver</string>
+    <string name="sleepmode">sleepmode</string>
+    <string name="speaker">Speaker</string>
+    <string name="subkey">Subkey</string>
+    <string name="frontcam">FrontCam</string>
+</resources>
