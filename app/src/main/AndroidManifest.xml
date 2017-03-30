@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.marcin.tester_app">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Tester_App2" />
+        <activity android:name=".System_test" />
+        <activity
+            android:name=".Red"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Green"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Blue"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Vibration"/>
+        <activity android:name=".receiver" />
+        <activity android:name=".dimming" />
+        <activity android:name=".megacam" />
+        <activity android:name=".sensor" />
+        <activity android:name=".touch" />
+        <activity android:name=".sleepmode" />
+        <activity android:name=".speaker" />
+        <activity android:name=".subkey" />
+        <activity android:name=".frontcam"></activity>
+    </application>
+
+</manifest>
