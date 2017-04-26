@@ -11,6 +11,7 @@ public class Vibration extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vibration);
+        //Wywołanie wibracji
         Vibrator vibrator = (Vibrator)getSystemService(getApplicationContext().VIBRATOR_SERVICE);
         vibrator.vibrate(1500);
     }

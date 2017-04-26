@@ -33,12 +33,13 @@ public class System_test extends AppCompatActivity {
                 {
 
                     case 1:
+                        //Toast po wybraniu elementu
                         Toast.makeText(getApplicationContext(),elementy[x],Toast.LENGTH_SHORT).show();
                         play.setOnClickListener(new View.OnClickListener() {
 
                             @Override
                             public void onClick(View v) {
-
+                        //Obsługa schowka
                                 if(android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.HONEYCOMB) {
                                     android.text.ClipboardManager clipboard = (android.text.ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
                                     clipboard.setText("*#06#");
@@ -84,10 +85,10 @@ public class System_test extends AppCompatActivity {
                             public void onClick(View v) {
                                 if(android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.HONEYCOMB) {
                                     android.text.ClipboardManager clipboard = (android.text.ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-                                    clipboard.setText("*#0#*");
+                                    clipboard.setText("*#0*#");
                                 } else {
                                     android.content.ClipboardManager clipboard = (android.content.ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-                                    android.content.ClipData clip = android.content.ClipData.newPlainText("Copied Text", "*#0#*");
+                                    android.content.ClipData clip = android.content.ClipData.newPlainText("Copied Text", "*#0*#");
                                     clipboard.setPrimaryClip(clip);
                                 }
                                 Intent intent = new Intent(Intent.ACTION_DIAL);
