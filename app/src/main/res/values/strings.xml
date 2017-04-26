@@ -6,7 +6,7 @@
     <string name="red">red</string>
     <string name="blue">blue</string>
     <string name="green">green</string>
-    <string name="dimming">dimming</string>
+    <string name="LED">LED</string>
     <string name="megacam">Megacam</string>
     <string name="sensor">Sensor</string>
     <string name="touch">touch</string>
@@ -15,4 +15,6 @@
     <string name="speaker">Speaker</string>
     <string name="subkey">Subkey</string>
     <string name="frontcam">FrontCam</string>
+    <string name="touch_test">touch_test</string>
+
 </resources>

@@ -58,8 +58,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="10dp"
-            android:id="@+id/dimming"
-            android:text="@string/dimming"/>
+            android:id="@+id/LED"
+            android:text="@string/LED"/>
 
     </LinearLayout>
     <LinearLayout

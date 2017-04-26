@@ -7,13 +7,64 @@
     tools:context="com.example.marcin.tester_app.System_test"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@android:color/holo_blue_light">
+    android:background="@android:color/holo_orange_light">
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wybierz markę telefonu:"/>
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/lista"
         android:layout_margin="20dp"
         ></Spinner>
+    <Button
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/play"
+        android:text="Otwórz aplikację"/>
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.Kod zostanie zapisany w schowku "/>
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.Po naciśnięciu przycisku zostanie włączony dialer "/>
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.Należy wkleić kod ze schowka"/>
 
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UWAGI BEZPIECZEŃSTWA:"/>
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HTC nie wchodzić w:"/>
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.Update camera firmware in image"/>
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LG nie wchodzić w:"/>
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.Update Touch Firmware"/>
 
 </LinearLayout>

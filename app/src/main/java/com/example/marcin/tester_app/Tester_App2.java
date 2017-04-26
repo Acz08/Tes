@@ -17,7 +17,7 @@ public class Tester_App2 extends AppCompatActivity {
         final Button green=(Button) findViewById(R.id.green);
         Button vibration=(Button) findViewById(R.id.vibration);
         Button reciver=(Button) findViewById(R.id.reciver);
-        Button dimming=(Button) findViewById(R.id.dimming);
+        Button led=(Button) findViewById(R.id.LED);
         Button megacam=(Button) findViewById(R.id.megacam);
         Button sensor=(Button) findViewById(R.id.sensor);
         Button touch=(Button) findViewById(R.id.touch);
@@ -60,10 +60,11 @@ public class Tester_App2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        dimming.setOnClickListener(new View.OnClickListener() {
+        led.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),dimming.class);
+
+                Intent intent=new Intent(getApplicationContext(),led.class);
                 startActivity(intent);
             }
         });
