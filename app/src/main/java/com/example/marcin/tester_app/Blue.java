@@ -12,6 +12,7 @@ public class Blue extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //Ustawienie na cały ekran koloru
 
         setContentView(R.layout.activity_blue);
     }
