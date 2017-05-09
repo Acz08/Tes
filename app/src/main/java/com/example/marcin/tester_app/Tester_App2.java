@@ -1,6 +1,10 @@
 package com.example.marcin.tester_app;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,8 +12,33 @@ import android.widget.Button;
 
 public class Tester_App2 extends AppCompatActivity {
 
+    public void onRequestPermissionResult(int requestCode, String[] permissions, int[] grantResults) {
+        if (requestCode == 66) {
+            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                // Now user should be able to use camera
+            }
+            else {
+                // Your app will not have this permission. Turn off all functions
+                // that require this permission or it will force close like your
+                // original question
+            }
+        }
+    }
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        if(Build.VERSION.SDK_INT>22)//Sprawdzanie wersji Androida
+        {
+
+//Prośba o nadanie uprawnień do kamery w Androidzie wyższym niż Loli
+        if (checkSelfPermission(Manifest.permission.CAMERA)
+                != PackageManager.PERMISSION_GRANTED) {
+
+            requestPermissions(new String[]{Manifest.permission.CAMERA},
+                    66);
+        }
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tester__app2);
         Button red=(Button) findViewById(R.id.red);
