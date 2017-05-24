@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class led extends Activity {
+public class Led extends Activity {
 
     //flag to detect flash is on or off
     private boolean isLighOn = false;
