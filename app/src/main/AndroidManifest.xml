@@ -38,10 +38,7 @@
         <activity android:name=".megacam" />
         <activity android:name=".sensor" />
         <activity android:name=".touch" />
-        <activity android:name=".sleepmode" />
         <activity android:name=".speaker" />
-        <activity android:name=".subkey" />
-        <activity android:name=".frontcam"></activity>
     </application>
 
 </manifest>

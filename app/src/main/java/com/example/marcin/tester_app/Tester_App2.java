@@ -50,10 +50,10 @@ public class Tester_App2 extends AppCompatActivity {
         Button megacam=(Button) findViewById(R.id.megacam);
         Button sensor=(Button) findViewById(R.id.sensor);
         Button touch=(Button) findViewById(R.id.touch);
-        Button sleepmode=(Button) findViewById(R.id.sleepmode);
+
         Button speaker=(Button) findViewById(R.id.speaker);
-        Button subkey=(Button) findViewById(R.id.subkey);
-        Button frontcam=(Button) findViewById(R.id.frontcam) ;
+
+
         red.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -118,13 +118,7 @@ public class Tester_App2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        sleepmode.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),sleepmode.class);
-                startActivity(intent);
-            }
-        });
+
         speaker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -132,19 +126,7 @@ public class Tester_App2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        subkey.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),subkey.class);
-                startActivity(intent);
-            }
-        });
-        frontcam.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),frontcam.class);
-                startActivity(intent);
-            }
-        });
+
+
     }
 }

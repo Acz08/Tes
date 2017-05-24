@@ -4,8 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fajne_tlo"
     tools:context="com.example.marcin.tester_app.Tester_App2"
     android:orientation="vertical">
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,23 +20,29 @@
             android:layout_weight="1"
             android:layout_margin="10dp"
             android:id="@+id/red"
+            android:background="#ff0000"
             android:text="@string/red"/>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="10dp"
             android:id="@+id/green"
+            android:background="#008000"
             android:text="@string/green"/>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="10dp"
             android:id="@+id/blue"
+            android:background="#0000ff"
             android:text="@string/blue"/>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -45,20 +54,24 @@
             android:layout_weight="1"
             android:layout_margin="10dp"
             android:id="@+id/reciver"
+
             android:text="@string/receiver"/>
+
         <Button
+            android:id="@+id/vibration"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:layout_margin="10dp"
-            android:id="@+id/vibration"
-            android:text="vibration"/>
+            android:layout_weight="1"
+            android:text="Vibration" />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="10dp"
             android:id="@+id/LED"
+
             android:text="@string/LED"/>
 
     </LinearLayout>
@@ -67,26 +80,32 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="horizontal">
+
         <Button
+            android:id="@+id/speaker"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:layout_margin="10dp"
-            android:id="@+id/megacam"
-            android:text="@string/megacam"/>
+            android:layout_weight="1"
+            android:text="SPEAKER" />
+
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="10dp"
             android:id="@+id/sensor"
+
             android:text="@string/sensor"/>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="10dp"
             android:id="@+id/touch"
+
             android:text="@string/touch"/>
 
     </LinearLayout>
@@ -94,42 +113,25 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        android:orientation="vertical">
+
         <Button
-            android:layout_width="match_parent"
+            android:id="@+id/megacam"
+            android:layout_width="178dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:text="@string/sleepmode"
-            android:id="@+id/sleepmode"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="10dp"
-            android:id="@+id/speaker"
-            android:text="@string/speaker"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="10dp"
-            android:id="@+id/subkey"
-            android:text="@string/subkey"/>
+
+            android:text="@string/megacam"
+            android:layout_weight="1" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="horizontal">
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="10dp"
-            android:id="@+id/frontcam"
-            android:text="@string/frontcam"/>
 
 
     </LinearLayout>
