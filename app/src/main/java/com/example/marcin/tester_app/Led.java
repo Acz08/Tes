@@ -79,7 +79,3 @@ public class Led extends Activity {
 
     }
 }
-
-
-
-
