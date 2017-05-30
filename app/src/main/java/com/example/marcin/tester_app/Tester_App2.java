@@ -93,7 +93,7 @@ public class Tester_App2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent=new Intent(getApplicationContext(),Led.class);
+                Intent intent=new Intent(getApplicationContext(),led.class);
                 startActivity(intent);
             }
         });
